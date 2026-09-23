@@ -4,6 +4,8 @@ Week 0 environment setup and the PropertyLite starter application from the IDX E
 
 The setup record is in [week-00](week-00/README.md). The reusable application stays in [propertylite](propertylite/) so later weeks can deploy the same code.
 
+The Week 1 account setup deliverable is in [week-01](week-01/README.md).
+
 ## PropertyLite
 
 Open Ubuntu with `wsl -d Ubuntu`, then run:
