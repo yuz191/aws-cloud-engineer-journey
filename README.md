@@ -24,11 +24,11 @@ The sample data is for local training. The application reads `PROPERTY_DATA_PATH
 
 ## Week 0 checklist
 
-- [ ] AWS personal account created and console login verified (requires account owner)
+- [x] AWS personal account created and console login verified
 - [x] Ubuntu WSL 2, AWS CLI, Git, VS Code extensions, and Terraform verified
-- [ ] GitHub repository created and this project pushed (requires GitHub account access)
+- [x] GitHub repository created and this project pushed
 - [x] All three PropertyLite endpoints return JSON
 
-Ubuntu is installed in `D:\Program Files\Ubuntu` and opens as user `yuz191`. Its password must be set privately with `wsl -d Ubuntu -u root passwd yuz191` in PowerShell before using `sudo`. The AWS account signup requires the account owner's personal information, payment method, and agreement acceptance.
+Ubuntu is installed in `D:\Program Files\Ubuntu` and opens as user `yuz191`. The account owner set its password privately, so `sudo` is available when needed.
 
 Do not commit AWS credentials, access keys, or personal account recovery information.
