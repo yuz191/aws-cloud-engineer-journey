@@ -4,9 +4,11 @@ Week 0 environment setup and the PropertyLite starter application from the IDX E
 
 ## PropertyLite
 
+Open Ubuntu with `wsl -d Ubuntu`, then run:
+
 ```bash
-cd propertylite
-python3 -m pip install -r requirements.txt
+cd /mnt/d/UIUC/career/IDX_Exchange/aws-cloud-engineer-journey/propertylite
+source ~/.venvs/propertylite/bin/activate
 python3 app.py
 ```
 
@@ -26,5 +28,7 @@ The sample data is for local training. The application reads `PROPERTY_DATA_PATH
 - [x] Ubuntu WSL 2, AWS CLI, Git, VS Code extensions, and Terraform verified
 - [ ] GitHub repository created and this project pushed (requires GitHub account access)
 - [x] All three PropertyLite endpoints return JSON
+
+Ubuntu is installed in `D:\Program Files\Ubuntu` and opens as user `yuz191`. Its password must be set privately with `wsl -d Ubuntu -u root passwd yuz191` in PowerShell before using `sudo`. The AWS account signup requires the account owner's personal information, payment method, and agreement acceptance.
 
 Do not commit AWS credentials, access keys, or personal account recovery information.
