@@ -2,6 +2,8 @@
 
 Week 0 environment setup and the PropertyLite starter application from the IDX Exchange AWS Cloud Engineer Intern Handbook.
 
+The setup record is in [week-00](week-00/README.md). The reusable application stays in [propertylite](propertylite/) so later weeks can deploy the same code.
+
 ## PropertyLite
 
 Open Ubuntu with `wsl -d Ubuntu`, then run:
