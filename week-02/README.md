@@ -2,7 +2,7 @@
 
 ## Policy: S3UploaderOnly-Zoey
 
-[policies/S3UploaderOnly-Zoey.json](policies/S3UploaderOnly-Zoey.json) is an exact copy of the deployed customer-managed policy's default version (`v1`), retrieved on September 27, 2026. It is attached directly to `s3-test-user`; that user has no inline policies.
+[policies/S3UploaderOnly-Zoey.json](policies/S3UploaderOnly-Zoey.json) is an exact copy of the deployed customer-managed policy's default version (`v2`), retrieved on September 27, 2026. It is attached directly to `s3-test-user`; that user has no inline policies.
 
 ### What it allows
 
@@ -11,7 +11,7 @@
 | `s3:PutObject` | Upload a new object or overwrite an existing object at a matching key. |
 | `s3:GetObject` | Read or download an object's current version at a matching key. |
 
-Both actions are scoped to `arn:aws:s3:::my-training-bucket-Zoey/*`. The trailing `/*` selects objects in that one named bucket, including objects under any prefix; it does not select the bucket resource itself or objects in other buckets. There are no conditions in this policy, so it does not further restrict object prefixes, source IPs, or encryption settings.
+Both actions are scoped to `arn:aws:s3:::my-training-bucket-zoey/*`. The trailing `/*` selects objects in that one named bucket, including objects under any prefix; it does not select the bucket resource itself or objects in other buckets. There are no conditions in this policy, so it does not further restrict object prefixes, source IPs, or encryption settings.
 
 ### Why I scoped it this way
 
@@ -29,9 +29,9 @@ aws s3 ls --profile s3test
 
 That is the expected least-privilege test result. It verifies the missing bucket-listing permission; it does not prove that upload and download work against a real bucket.
 
-### Bucket-name correction needed before object tests
+### Bucket-name correction completed
 
-The deployed ARN currently contains an uppercase `Z` in `my-training-bucket-Zoey`. New S3 general purpose bucket names must use lowercase letters, so this name cannot be used for a newly created training bucket. Before creating the bucket or testing object operations, choose an available lowercase name (for example, `my-training-bucket-zoey`) and update the deployed policy's resource ARN to match the actual bucket exactly. The JSON above preserves the current deployed policy rather than presenting a correction as already applied.
+On September 27, 2026, I corrected the bucket name to lowercase `my-training-bucket-zoey` and saved policy version `v2` as the default. The JSON in this repository matches that deployed version. When creating the training bucket later, use this exact name if it is available; if a different name is needed, update the policy ARN to match the actual bucket before testing object operations.
 
 ## References
 
