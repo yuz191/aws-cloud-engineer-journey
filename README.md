@@ -6,6 +6,8 @@ The setup record is in [week-00](week-00/README.md). The reusable application st
 
 The Week 1 account setup deliverable is in [week-01](week-01/README.md).
 
+The Week 2 IAM policy and scope explanation are in [week-02](week-02/README.md).
+
 ## PropertyLite
 
 Open Ubuntu with `wsl -d Ubuntu`, then run:
