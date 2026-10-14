@@ -23,9 +23,9 @@ Both requests returned HTTP 200. `/health` returned `{"status":"ok"}`; the listi
 
 Evidence from my PowerShell terminal: both screenshots show the EC2 public IPv4 address in the `curl` command, followed by HTTP 200 and the expected JSON. PowerShell displayed a script-parsing warning before each response because its `curl` command invoked `Invoke-WebRequest`.
 
-![Health request to the EC2 public IP and its HTTP 200 response](curl-health.png)
+![Health request to the EC2 public IP and its HTTP 200 response](curl-health-public-ip-20261014.png)
 
-![Property request to the EC2 public IP and its HTTP 200 response](curl-listing.png)
+![Property request to the EC2 public IP and its HTTP 200 response](curl-listing-public-ip-20261014.png)
 
 ## Connect with SSH
 
