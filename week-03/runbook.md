@@ -1,6 +1,6 @@
 # Week 3 runbook — PropertyLite on EC2
 
-Verified in the EC2 console on October 14, 2026: `property-api-01` is instance `i-0cddf25b01bf5135c`, running as `t3.micro` in `us-east-2a`, with key pair `training-key`. Its current public IPv4 address is `18.119.140.165`. This auto-assigned address can change after a stop/start, so check the console before future connection attempts.
+Verified in the EC2 console on October 14, 2026: `property-api-01` was instance `i-0cddf25b01bf5135c`, running as `t3.micro` in `us-east-2a`, with key pair `training-key`. Its public IPv4 address during testing was `18.119.140.165`. It was terminated after the lab. For a future instance, use the public address shown in its own EC2 details.
 
 ## Deployment
 
@@ -51,6 +51,6 @@ If SSH hangs and times out, I would first confirm that the instance is running a
 
 ## Cleanup
 
-After recording the curl screenshot and verifying the snapshot is complete, terminate `property-api-01` in EC2 → Instances. This permanently removes the instance. The instance's Storage tab currently shows **Delete on termination: Yes** for root volume `vol-04f5da16459931976`. After termination, return to EC2 → Volumes and confirm that this volume was deleted. If it remains, investigate before removing the unused volume.
+After recording the curl screenshots and verifying the snapshot was complete, I terminated `property-api-01` in EC2 → Instances. Before termination, its Storage tab showed **Delete on termination: Yes** for root volume `vol-04f5da16459931976`.
 
-**Status to record:** Instance termination and root-volume deletion have not been verified in this runbook. The snapshot is a separate resource and remains until it is deleted; decide when to remove it after the exercise and any required review.
+**Verified on October 14, 2026:** The EC2 Instances list shows `i-0cddf25b01bf5135c` as **Terminated**. After refreshing EC2 → Volumes, the table says there are no volumes in this Region, so root volume `vol-04f5da16459931976` was deleted. I refreshed the snapshot details separately; `snap-0128b251b59665928` remains **Completed, 100%**. The snapshot is a separate resource that can be retained for the exercise or deleted later when no longer needed.
