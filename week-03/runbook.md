@@ -21,7 +21,11 @@ curl http://18.119.140.165:8080/properties/R100234
 
 Both requests returned HTTP 200. `/health` returned `{"status":"ok"}`; the listing endpoint returned the Sacramento record with listing ID `R100234`. In PowerShell, `curl` displayed a formatted `Invoke-WebRequest` response rather than only the raw JSON body.
 
-Evidence: [health response](curl-health.png) and [listing response](curl-listing.png), captured from the local PowerShell terminal.
+Evidence from my PowerShell terminal: both screenshots show the EC2 public IPv4 address in the `curl` command, followed by HTTP 200 and the expected JSON. PowerShell displayed a script-parsing warning before each response because its `curl` command invoked `Invoke-WebRequest`.
+
+![Health request to the EC2 public IP and its HTTP 200 response](curl-health.png)
+
+![Property request to the EC2 public IP and its HTTP 200 response](curl-listing.png)
 
 ## Connect with SSH
 
