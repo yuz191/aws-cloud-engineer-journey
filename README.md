@@ -10,6 +10,8 @@ The Week 2 IAM policy and scope explanation are in [week-02](week-02/README.md).
 
 The Week 3 EC2 deployment, EBS snapshot, troubleshooting, and cleanup record is in [week-03](week-03/runbook.md).
 
+The Week 4 S3, RDS, DynamoDB, data sanitization, and cleanup record is in [week-04](week-04/README.md).
+
 ## PropertyLite
 
 Open Ubuntu with `wsl -d Ubuntu`, then run:
