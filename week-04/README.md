@@ -37,3 +37,5 @@ I created the `Properties` table with `L_ListingID` as its string partition key 
 After the checks, I deleted the DynamoDB table, removed the S3 lifecycle rule and Standard-class object, and deleted the empty bucket. I deleted `training-db` without a final snapshot, terminated the temporary EC2 connector, stopped the local SSH tunnel, and deleted both lab security groups and the DB subnet group. I also deleted the local raw and batched SQL files, private logs, and temporary item files. Follow-up CLI checks returned no `training-db`, no `Properties` table, no training bucket, a `terminated` EC2 instance, and no RDS-managed secret.
 
 The Billing dashboard screenshot needs to be added after account sign-in and MFA. AWS billing data can lag resource deletion, so the absence of lab resources is the cleanup verification recorded here.
+
+The separate Week 3 EBS snapshot `snap-0128b251b59665928` still exists in `us-east-2`. It was not created for Week 4 and may appear as a cost on the Billing dashboard.
