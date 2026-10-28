@@ -8,3 +8,4 @@ __pycache__/
 *.tfvars.json
 .aws/
 rets_property.sql
+/week-05/.lab-state

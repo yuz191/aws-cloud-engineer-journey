@@ -12,6 +12,8 @@ The Week 3 EC2 deployment, EBS snapshot, troubleshooting, and cleanup record is 
 
 The Week 4 S3, RDS, DynamoDB, data sanitization, and cleanup record is in [week-04](week-04/README.md).
 
+The Week 5 custom VPC, bastion SSH path, NAT verification, network diagram, and cleanup record are in [week-05](week-05/README.md).
+
 ## PropertyLite
 
 Open Ubuntu with `wsl -d Ubuntu`, then run:
