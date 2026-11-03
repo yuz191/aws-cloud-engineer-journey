@@ -1,0 +1,82 @@
+{
+  "CommandInvocations": [
+    {
+      "CommandId": "0eb03c3f-9e00-46d4-9192-75918ca97e30",
+      "InstanceId": "i-0d8f38a0434db22c6",
+      "InstanceName": "ip-10-0-158-121.us-east-2.compute.internal",
+      "Comment": "Week 6 CPU target tracking scale-out test",
+      "DocumentName": "AWS-RunShellScript",
+      "DocumentVersion": "$DEFAULT",
+      "RequestedDateTime": "2026-11-03T17:16:22.596000-06:00",
+      "Status": "Cancelled",
+      "StatusDetails": "Cancelled",
+      "StandardOutputUrl": "",
+      "StandardErrorUrl": "",
+      "CommandPlugins": [
+        {
+          "Name": "aws:runShellScript",
+          "Status": "Cancelled",
+          "StatusDetails": "Cancelled",
+          "ResponseCode": 137,
+          "ResponseStartDateTime": "2026-11-03T17:16:22.745000-06:00",
+          "ResponseFinishDateTime": "2026-11-03T17:21:43.794000-06:00",
+          "Output": "Last metadata expiration check: 0:02:54 ago on Tue Nov  3 23:13:29 2026.\nDependencies resolved.\n================================================================================\n Package          Arch       Version                      Repository       Size\n================================================================================\nInstalling:\n stress-ng        x86_64     0.15.05-1.amzn2023           amazonlinux     2.3 M\nInstalling dependencies:\n Judy             x86_64     1.0.5-25.amzn2023.0.3        amazonlinux     153 k\n libbsd           x86_64     0.10.0-7.amzn2023.0.2        amazonlinux     109 k\n lksctp-tools     x86_64     1.0.18-9.amzn2023.0.3        amazonlinux      92 k\n\nTransaction Summary\n================================================================================\nInstall  4 Packages\n\nTotal download size: 2.7 M\nInstalled size: 9.7 M\nDownloading Packages:\n(1/4): libbsd-0.10.0-7.amzn2023.0.2.x86_64.rpm  3.8 MB/s | 109 kB     00:00    \n(2/4): Judy-1.0.5-25.amzn2023.0.3.x86_64.rpm    4.5 MB/s | 153 kB     00:00    \n(3/4): lksctp-tools-1.0.18-9.amzn2023.0.3.x86_6 2.7 MB/s |  92 kB     00:00    \n(4/4): stress-ng-0.15.05-1.amzn2023.x86_64.rpm   21 MB/s | 2.3 MB     00:00    \n--------------------------------------------------------------------------------\nTotal                                            13 MB/s | 2.7 MB     00:00     \nRunning transaction check\nTransaction check succeeded.\nRunning transaction test\nTransaction test succeeded.\nRunning transaction\n  Preparing        :                                                        1/1 \n  Installing       : lksctp-tools-1.0.18-9.amzn2023.0.3.x86_64              1/4 \n  Installing       : libbsd-0.10.0-7.amzn2023.0.2.x86_64                    2/4 \n  Installing       : Judy-1.0.5-25.amzn2023.0.3.x86_64                      3/4 \n  Installing       : stress-ng-0.15.05-1.amzn2023.x86_64                    4/4 \n  Running scriptlet: stress-ng-0.15.05-1.amzn2023.x86_64                    4/4 \n  Verifying        : Judy-1.0.5-25.amzn2023.0.3.x86_64                      1/4 \n  Verifying        : libbsd-0.10.0-7.amzn2023.0.2.x86_64                    2/4 \n  Verifying        : lksctp-tools-1.0.18-9.amzn2023.0.3.x86_64              3/4 \n  Verifying        : stress-ng-0.15.05-1.amzn2023.x86_64                    4/4 \n\nInstall\n---Output truncated---\n----------ERROR-------\nstress-ng: info:  [3486] setting to a 600 second (10 mins, 0.00 secs) run per stressor\nstress-ng: info:  [3486] dispatching hogs: 2 cpu\n",
+          "StandardOutputUrl": "",
+          "StandardErrorUrl": "",
+          "OutputS3Region": "us-east-2",
+          "OutputS3BucketName": "",
+          "OutputS3KeyPrefix": ""
+        }
+      ],
+      "ServiceRole": "",
+      "NotificationConfig": {
+        "NotificationArn": "",
+        "NotificationEvents": [],
+        "NotificationType": ""
+      },
+      "CloudWatchOutputConfig": {
+        "CloudWatchLogGroupName": "",
+        "CloudWatchOutputEnabled": false
+      }
+    },
+    {
+      "CommandId": "0eb03c3f-9e00-46d4-9192-75918ca97e30",
+      "InstanceId": "i-0867c295b0c9e542b",
+      "InstanceName": "ip-10-0-131-216.us-east-2.compute.internal",
+      "Comment": "Week 6 CPU target tracking scale-out test",
+      "DocumentName": "AWS-RunShellScript",
+      "DocumentVersion": "$DEFAULT",
+      "RequestedDateTime": "2026-11-03T17:16:22.589000-06:00",
+      "Status": "Cancelled",
+      "StatusDetails": "Cancelled",
+      "StandardOutputUrl": "",
+      "StandardErrorUrl": "",
+      "CommandPlugins": [
+        {
+          "Name": "aws:runShellScript",
+          "Status": "Cancelled",
+          "StatusDetails": "Cancelled",
+          "ResponseCode": 137,
+          "ResponseStartDateTime": "2026-11-03T17:16:22.950000-06:00",
+          "ResponseFinishDateTime": "2026-11-03T17:21:43.850000-06:00",
+          "Output": "Last metadata expiration check: 0:06:01 ago on Tue Nov  3 23:10:22 2026.\nDependencies resolved.\n================================================================================\n Package          Arch       Version                      Repository       Size\n================================================================================\nInstalling:\n stress-ng        x86_64     0.15.05-1.amzn2023           amazonlinux     2.3 M\nInstalling dependencies:\n Judy             x86_64     1.0.5-25.amzn2023.0.3        amazonlinux     153 k\n libbsd           x86_64     0.10.0-7.amzn2023.0.2        amazonlinux     109 k\n lksctp-tools     x86_64     1.0.18-9.amzn2023.0.3        amazonlinux      92 k\n\nTransaction Summary\n================================================================================\nInstall  4 Packages\n\nTotal download size: 2.7 M\nInstalled size: 9.7 M\nDownloading Packages:\n(1/4): lksctp-tools-1.0.18-9.amzn2023.0.3.x86_6 4.5 MB/s |  92 kB     00:00    \n(2/4): Judy-1.0.5-25.amzn2023.0.3.x86_64.rpm    5.5 MB/s | 153 kB     00:00    \n(3/4): libbsd-0.10.0-7.amzn2023.0.2.x86_64.rpm  3.2 MB/s | 109 kB     00:00    \n(4/4): stress-ng-0.15.05-1.amzn2023.x86_64.rpm   46 MB/s | 2.3 MB     00:00    \n--------------------------------------------------------------------------------\nTotal                                            21 MB/s | 2.7 MB     00:00     \nRunning transaction check\nTransaction check succeeded.\nRunning transaction test\nTransaction test succeeded.\nRunning transaction\n  Preparing        :                                                        1/1 \n  Installing       : lksctp-tools-1.0.18-9.amzn2023.0.3.x86_64              1/4 \n  Installing       : libbsd-0.10.0-7.amzn2023.0.2.x86_64                    2/4 \n  Installing       : Judy-1.0.5-25.amzn2023.0.3.x86_64                      3/4 \n  Installing       : stress-ng-0.15.05-1.amzn2023.x86_64                    4/4 \n  Running scriptlet: stress-ng-0.15.05-1.amzn2023.x86_64                    4/4 \n  Verifying        : Judy-1.0.5-25.amzn2023.0.3.x86_64                      1/4 \n  Verifying        : libbsd-0.10.0-7.amzn2023.0.2.x86_64                    2/4 \n  Verifying        : lksctp-tools-1.0.18-9.amzn2023.0.3.x86_64              3/4 \n  Verifying        : stress-ng-0.15.05-1.amzn2023.x86_64                    4/4 \n\nInstall\n---Output truncated---\n----------ERROR-------\nstress-ng: info:  [3525] setting to a 600 second (10 mins, 0.00 secs) run per stressor\nstress-ng: info:  [3525] dispatching hogs: 2 cpu\n",
+          "StandardOutputUrl": "",
+          "StandardErrorUrl": "",
+          "OutputS3Region": "us-east-2",
+          "OutputS3BucketName": "",
+          "OutputS3KeyPrefix": ""
+        }
+      ],
+      "ServiceRole": "",
+      "NotificationConfig": {
+        "NotificationArn": "",
+        "NotificationEvents": [],
+        "NotificationType": ""
+      },
+      "CloudWatchOutputConfig": {
+        "CloudWatchLogGroupName": "",
+        "CloudWatchOutputEnabled": false
+      }
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "MetricAlarms": [
+    {
+      "AlarmName": "TargetTracking-property-api-week6-asg-AlarmHigh-19e9660a-fd1c-41a2-a327-82b01fdbae84",
+      "AlarmArn": "arn:aws:cloudwatch:us-east-2:516216669808:alarm:TargetTracking-property-api-week6-asg-AlarmHigh-19e9660a-fd1c-41a2-a327-82b01fdbae84",
+      "AlarmDescription": "DO NOT EDIT OR DELETE. For TargetTrackingScaling policy arn:aws:autoscaling:us-east-2:516216669808:scalingPolicy:7a5b38da-5544-4df3-9009-786327a1542c:autoScalingGroupName/property-api-week6-asg:policyName/property-api-week6-cpu50.",
+      "AlarmConfigurationUpdatedTimestamp": "2026-11-03T17:09:20.616000-06:00",
+      "ActionsEnabled": true,
+      "OKActions": [],
+      "AlarmActions": [
+        "arn:aws:autoscaling:us-east-2:516216669808:scalingPolicy:7a5b38da-5544-4df3-9009-786327a1542c:autoScalingGroupName/property-api-week6-asg:policyName/property-api-week6-cpu50"
+      ],
+      "InsufficientDataActions": [],
+      "StateValue": "OK",
+      "StateReason": "Threshold Crossed: 1 datapoint [18.405322433856792 (03/11/26 23:22:00)] was not greater than the threshold (50.0).",
+      "StateReasonData": "{\"version\":\"1.0\",\"queryDate\":\"2026-11-03T23:23:42.808+0000\",\"startDate\":\"2026-11-03T23:20:00.000+0000\",\"statistic\":\"Average\",\"period\":60,\"recentDatapoints\":[99.99749991666388,96.50833333333334,18.405322433856792],\"threshold\":50.0,\"evaluatedDatapoints\":[{\"timestamp\":\"2026-11-03T23:22:00.000+0000\",\"sampleCount\":2.0,\"value\":18.405322433856792}]}",
+      "StateUpdatedTimestamp": "2026-11-03T17:23:42.809000-06:00",
+      "MetricName": "CPUUtilization",
+      "Namespace": "AWS/EC2",
+      "Statistic": "Average",
+      "Dimensions": [
+        {
+          "Name": "AutoScalingGroupName",
+          "Value": "property-api-week6-asg"
+        }
+      ],
+      "Period": 60,
+      "EvaluationPeriods": 3,
+      "Threshold": 50.0,
+      "ComparisonOperator": "GreaterThanThreshold",
+      "StateTransitionedTimestamp": "2026-11-03T17:23:42.809000-06:00"
+    }
+  ],
+  "CompositeAlarms": [],
+  "LogAlarms": []
+}

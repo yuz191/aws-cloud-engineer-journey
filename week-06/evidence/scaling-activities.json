@@ -1,0 +1,102 @@
+{
+  "Activities": [
+    {
+      "ActivityId": "ca26868e-dcdf-e259-2bc6-39e00c52f435",
+      "AutoScalingGroupName": "property-api-week6-asg",
+      "Description": "Launching a new EC2 instance: i-0b356670856fc76e3",
+      "Cause": "At 2026-11-03T23:20:42Z a monitor alarm TargetTracking-property-api-week6-asg-AlarmHigh-19e9660a-fd1c-41a2-a327-82b01fdbae84 in state ALARM triggered policy property-api-week6-cpu50 changing the desired capacity from 2 to 4.  At 2026-11-03T23:20:54Z an instance was started in response to a difference between desired and actual capacity, increasing the capacity from 2 to 4.",
+      "StartTime": "2026-11-03T23:20:56.056000+00:00",
+      "EndTime": "2026-11-03T23:23:02+00:00",
+      "StatusCode": "Successful",
+      "Progress": 100,
+      "Details": "{\"Availability Zone ID\":\"use2-az1\",\"Subnet ID\":\"subnet-004c0219847044152\",\"Availability Zone\":\"us-east-2a\",\"InvokingAlarms\":[{\"AlarmArn\":\"arn:aws:cloudwatch:us-east-2:516216669808:alarm:TargetTracking-property-api-week6-asg-AlarmHigh-19e9660a-fd1c-41a2-a327-82b01fdbae84\",\"Trigger\":{\"MetricName\":\"CPUUtilization\",\"EvaluateLowSampleCountPercentile\":\"\",\"ComparisonOperator\":\"GreaterThanThreshold\",\"TreatMissingData\":\"\",\"Statistic\":\"AVERAGE\",\"StatisticType\":\"Statistic\",\"Period\":60,\"EvaluationPeriods\":3,\"Unit\":null,\"Namespace\":\"AWS/EC2\",\"Threshold\":50},\"AlarmName\":\"TargetTracking-property-api-week6-asg-AlarmHigh-19e9660a-fd1c-41a2-a327-82b01fdbae84\",\"AlarmDescription\":\"DO NOT EDIT OR DELETE. For TargetTrackingScaling policy arn:aws:autoscaling:us-east-2:516216669808:scalingPolicy:7a5b38da-5544-4df3-9009-786327a1542c:autoScalingGroupName/property-api-week6-asg:policyName/property-api-week6-cpu50.\",\"AWSAccountId\":\"516216669808\",\"OldStateValue\":\"OK\",\"Region\":\"US East (Ohio)\",\"NewStateValue\":\"ALARM\",\"AlarmConfigurationUpdatedTimestamp\":1793747360616,\"StateChangeTime\":1793748042811}]}",
+      "AutoScalingGroupARN": "arn:aws:autoscaling:us-east-2:516216669808:autoScalingGroup:bfdf1b14-3910-4f08-8563-a7e61de446b0:autoScalingGroupName/property-api-week6-asg"
+    },
+    {
+      "ActivityId": "70c6868e-dcdd-12b7-83b6-28aecf7a49a8",
+      "AutoScalingGroupName": "property-api-week6-asg",
+      "Description": "Launching a new EC2 instance: i-0bf7aa7431f729b4f",
+      "Cause": "At 2026-11-03T23:20:42Z a monitor alarm TargetTracking-property-api-week6-asg-AlarmHigh-19e9660a-fd1c-41a2-a327-82b01fdbae84 in state ALARM triggered policy property-api-week6-cpu50 changing the desired capacity from 2 to 4.  At 2026-11-03T23:20:54Z an instance was started in response to a difference between desired and actual capacity, increasing the capacity from 2 to 4.",
+      "StartTime": "2026-11-03T23:20:55.876000+00:00",
+      "EndTime": "2026-11-03T23:23:00+00:00",
+      "StatusCode": "Successful",
+      "Progress": 100,
+      "Details": "{\"Availability Zone ID\":\"use2-az2\",\"Subnet ID\":\"subnet-0cd417996bc70d96f\",\"Availability Zone\":\"us-east-2b\",\"InvokingAlarms\":[{\"AlarmArn\":\"arn:aws:cloudwatch:us-east-2:516216669808:alarm:TargetTracking-property-api-week6-asg-AlarmHigh-19e9660a-fd1c-41a2-a327-82b01fdbae84\",\"Trigger\":{\"MetricName\":\"CPUUtilization\",\"EvaluateLowSampleCountPercentile\":\"\",\"ComparisonOperator\":\"GreaterThanThreshold\",\"TreatMissingData\":\"\",\"Statistic\":\"AVERAGE\",\"StatisticType\":\"Statistic\",\"Period\":60,\"EvaluationPeriods\":3,\"Unit\":null,\"Namespace\":\"AWS/EC2\",\"Threshold\":50},\"AlarmName\":\"TargetTracking-property-api-week6-asg-AlarmHigh-19e9660a-fd1c-41a2-a327-82b01fdbae84\",\"AlarmDescription\":\"DO NOT EDIT OR DELETE. For TargetTrackingScaling policy arn:aws:autoscaling:us-east-2:516216669808:scalingPolicy:7a5b38da-5544-4df3-9009-786327a1542c:autoScalingGroupName/property-api-week6-asg:policyName/property-api-week6-cpu50.\",\"AWSAccountId\":\"516216669808\",\"OldStateValue\":\"OK\",\"Region\":\"US East (Ohio)\",\"NewStateValue\":\"ALARM\",\"AlarmConfigurationUpdatedTimestamp\":1793747360616,\"StateChangeTime\":1793748042811}]}",
+      "AutoScalingGroupARN": "arn:aws:autoscaling:us-east-2:516216669808:autoScalingGroup:bfdf1b14-3910-4f08-8563-a7e61de446b0:autoScalingGroupName/property-api-week6-asg"
+    },
+    {
+      "ActivityId": "dbb6868e-bf6f-5e4b-0744-3c2c2a899702",
+      "AutoScalingGroupName": "property-api-week6-asg",
+      "Description": "Launching a new EC2 instance: i-0d8f38a0434db22c6",
+      "Cause": "At 2026-11-03T23:12:52Z an instance was launched in response to an unhealthy instance needing to be replaced.",
+      "StartTime": "2026-11-03T23:12:53.719000+00:00",
+      "EndTime": "2026-11-03T23:14:58+00:00",
+      "StatusCode": "Successful",
+      "Progress": 100,
+      "Details": "{\"Availability Zone ID\":\"use2-az2\",\"Subnet ID\":\"subnet-0cd417996bc70d96f\",\"Availability Zone\":\"us-east-2b\"}",
+      "AutoScalingGroupARN": "arn:aws:autoscaling:us-east-2:516216669808:autoScalingGroup:bfdf1b14-3910-4f08-8563-a7e61de446b0:autoScalingGroupName/property-api-week6-asg"
+    },
+    {
+      "ActivityId": "e086868e-bf55-e23b-34a9-c134283763d4",
+      "AutoScalingGroupName": "property-api-week6-asg",
+      "Description": "Terminating EC2 instance: i-0305cc35ed36726d0",
+      "Cause": "At 2026-11-03T23:12:52Z an instance was taken out of service in response to an EC2 health check indicating it has been terminated or stopped.",
+      "StartTime": "2026-11-03T23:12:52.088000+00:00",
+      "EndTime": "2026-11-03T23:17:54+00:00",
+      "StatusCode": "Successful",
+      "Progress": 100,
+      "Details": "{\"Availability Zone ID\":\"use2-az2\",\"Subnet ID\":\"subnet-0cd417996bc70d96f\",\"Availability Zone\":\"us-east-2b\"}",
+      "AutoScalingGroupARN": "arn:aws:autoscaling:us-east-2:516216669808:autoScalingGroup:bfdf1b14-3910-4f08-8563-a7e61de446b0:autoScalingGroupName/property-api-week6-asg"
+    },
+    {
+      "ActivityId": "8806868e-b404-e4e3-1dd9-cc20aafb954f",
+      "AutoScalingGroupName": "property-api-week6-asg",
+      "Description": "Launching a new EC2 instance: i-0867c295b0c9e542b",
+      "Cause": "At 2026-11-03T23:09:44Z an instance was started in response to a difference between desired and actual capacity, increasing the capacity from 0 to 2.",
+      "StartTime": "2026-11-03T23:09:46.681000+00:00",
+      "EndTime": "2026-11-03T23:11:53+00:00",
+      "StatusCode": "Successful",
+      "Progress": 100,
+      "Details": "{\"Availability Zone ID\":\"use2-az1\",\"Subnet ID\":\"subnet-004c0219847044152\",\"Availability Zone\":\"us-east-2a\"}",
+      "AutoScalingGroupARN": "arn:aws:autoscaling:us-east-2:516216669808:autoScalingGroup:bfdf1b14-3910-4f08-8563-a7e61de446b0:autoScalingGroupName/property-api-week6-asg"
+    },
+    {
+      "ActivityId": "bfd6868e-b403-a98e-9bab-b1f8fcf39e48",
+      "AutoScalingGroupName": "property-api-week6-asg",
+      "Description": "Launching a new EC2 instance: i-0305cc35ed36726d0",
+      "Cause": "At 2026-11-03T23:09:44Z an instance was started in response to a difference between desired and actual capacity, increasing the capacity from 0 to 2.",
+      "StartTime": "2026-11-03T23:09:46.602000+00:00",
+      "EndTime": "2026-11-03T23:11:51+00:00",
+      "StatusCode": "Successful",
+      "Progress": 100,
+      "Details": "{\"Availability Zone ID\":\"use2-az2\",\"Subnet ID\":\"subnet-0cd417996bc70d96f\",\"Availability Zone\":\"us-east-2b\"}",
+      "AutoScalingGroupARN": "arn:aws:autoscaling:us-east-2:516216669808:autoScalingGroup:bfdf1b14-3910-4f08-8563-a7e61de446b0:autoScalingGroupName/property-api-week6-asg"
+    },
+    {
+      "ActivityId": "49f6868e-b055-2712-8ff1-654cd735791b",
+      "AutoScalingGroupName": "property-api-week6-asg",
+      "Description": "Launching a new EC2 instance.  Status Reason: Access denied when attempting to assume role arn:aws:iam::516216669808:role/aws-service-role/autoscaling.amazonaws.com/AWSServiceRoleForAutoScaling. Validating load balancer configuration failed.",
+      "Cause": "At 2026-11-03T23:08:44Z a user request created an AutoScalingGroup changing the desired capacity from 0 to 2.  At 2026-11-03T23:08:45Z an instance was started in response to a difference between desired and actual capacity, increasing the capacity from 0 to 2.",
+      "StartTime": "2026-11-03T23:08:46.281000+00:00",
+      "EndTime": "2026-11-03T23:08:46+00:00",
+      "StatusCode": "Failed",
+      "StatusMessage": "Access denied when attempting to assume role arn:aws:iam::516216669808:role/aws-service-role/autoscaling.amazonaws.com/AWSServiceRoleForAutoScaling. Validating load balancer configuration failed.",
+      "Progress": 100,
+      "Details": "{\"Availability Zone ID\":\"use2-az1\",\"Subnet ID\":\"subnet-004c0219847044152\",\"Availability Zone\":\"us-east-2a\"}",
+      "AutoScalingGroupARN": "arn:aws:autoscaling:us-east-2:516216669808:autoScalingGroup:bfdf1b14-3910-4f08-8563-a7e61de446b0:autoScalingGroupName/property-api-week6-asg"
+    },
+    {
+      "ActivityId": "1706868e-b053-3eb6-23b0-c824627b6dab",
+      "AutoScalingGroupName": "property-api-week6-asg",
+      "Description": "Launching a new EC2 instance.  Status Reason: Access denied when attempting to assume role arn:aws:iam::516216669808:role/aws-service-role/autoscaling.amazonaws.com/AWSServiceRoleForAutoScaling. Validating load balancer configuration failed.",
+      "Cause": "At 2026-11-03T23:08:44Z a user request created an AutoScalingGroup changing the desired capacity from 0 to 2.  At 2026-11-03T23:08:45Z an instance was started in response to a difference between desired and actual capacity, increasing the capacity from 0 to 2.",
+      "StartTime": "2026-11-03T23:08:46.159000+00:00",
+      "EndTime": "2026-11-03T23:08:46+00:00",
+      "StatusCode": "Failed",
+      "StatusMessage": "Access denied when attempting to assume role arn:aws:iam::516216669808:role/aws-service-role/autoscaling.amazonaws.com/AWSServiceRoleForAutoScaling. Validating load balancer configuration failed.",
+      "Progress": 100,
+      "Details": "{\"Availability Zone ID\":\"use2-az2\",\"Subnet ID\":\"subnet-0cd417996bc70d96f\",\"Availability Zone\":\"us-east-2b\"}",
+      "AutoScalingGroupARN": "arn:aws:autoscaling:us-east-2:516216669808:autoScalingGroup:bfdf1b14-3910-4f08-8563-a7e61de446b0:autoScalingGroupName/property-api-week6-asg"
+    }
+  ]
+}

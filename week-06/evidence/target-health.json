@@ -1,0 +1,64 @@
+{
+  "TargetHealthDescriptions": [
+    {
+      "Target": {
+        "Id": "i-0bf7aa7431f729b4f",
+        "Port": 8080
+      },
+      "HealthCheckPort": "8080",
+      "TargetHealth": {
+        "State": "healthy"
+      },
+      "AdministrativeOverride": {
+        "State": "no_override",
+        "Reason": "AdministrativeOverride.NoOverride",
+        "Description": "No override is currently active on target"
+      }
+    },
+    {
+      "Target": {
+        "Id": "i-0d8f38a0434db22c6",
+        "Port": 8080
+      },
+      "HealthCheckPort": "8080",
+      "TargetHealth": {
+        "State": "healthy"
+      },
+      "AdministrativeOverride": {
+        "State": "no_override",
+        "Reason": "AdministrativeOverride.NoOverride",
+        "Description": "No override is currently active on target"
+      }
+    },
+    {
+      "Target": {
+        "Id": "i-0867c295b0c9e542b",
+        "Port": 8080
+      },
+      "HealthCheckPort": "8080",
+      "TargetHealth": {
+        "State": "healthy"
+      },
+      "AdministrativeOverride": {
+        "State": "no_override",
+        "Reason": "AdministrativeOverride.NoOverride",
+        "Description": "No override is currently active on target"
+      }
+    },
+    {
+      "Target": {
+        "Id": "i-0b356670856fc76e3",
+        "Port": 8080
+      },
+      "HealthCheckPort": "8080",
+      "TargetHealth": {
+        "State": "healthy"
+      },
+      "AdministrativeOverride": {
+        "State": "no_override",
+        "Reason": "AdministrativeOverride.NoOverride",
+        "Description": "No override is currently active on target"
+      }
+    }
+  ]
+}
