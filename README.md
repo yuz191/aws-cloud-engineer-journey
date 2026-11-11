@@ -14,6 +14,8 @@ The Week 4 S3, RDS, DynamoDB, data sanitization, and cleanup record is in [week-
 
 The Week 5 custom VPC, bastion SSH path, NAT verification, network diagram, and cleanup record are in [week-05](week-05/README.md).
 
+The Week 7 API Gateway, Lambda, DynamoDB, and SQS lab is in [week-07](week-07/README.md).
+
 ## PropertyLite
 
 Open Ubuntu with `wsl -d Ubuntu`, then run:

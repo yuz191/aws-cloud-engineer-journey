@@ -1,0 +1,79 @@
+{
+  "info": {
+    "name": "PropertyLite Week 7 - Get Property",
+    "description": "API Gateway -> Lambda -> DynamoDB read path. Set the baseUrl collection variable to the deployed HTTP API endpoint before running.",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Get existing property (200)",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Accept",
+            "value": "application/json"
+          }
+        ],
+        "url": "{{baseUrl}}/properties/R100234",
+        "description": "Returns the same listing fields as PropertyLite's Flask GET /properties/R100234 route."
+      },
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "pm.test('HTTP 200', function () {",
+              "    pm.response.to.have.status(200);",
+              "});",
+              "const body = pm.response.json();",
+              "pm.test('Returns the expected PropertyLite listing', function () {",
+              "    pm.expect(body.L_ListingID).to.eql('R100234');",
+              "    pm.expect(body.L_City).to.eql('Sacramento');",
+              "});"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "Get missing property (404)",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Accept",
+            "value": "application/json"
+          }
+        ],
+        "url": "{{baseUrl}}/properties/DOES-NOT-EXIST",
+        "description": "Verifies the missing-listing behavior of the original PropertyLite route."
+      },
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "pm.test('HTTP 404', function () {",
+              "    pm.response.to.have.status(404);",
+              "});",
+              "const body = pm.response.json();",
+              "pm.test('Returns the PropertyLite not-found body', function () {",
+              "    pm.expect(body).to.deep.equal({ error: 'not found' });",
+              "});"
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "variable": [
+    {
+      "key": "baseUrl",
+      "value": "https://REPLACE_ME.execute-api.us-east-2.amazonaws.com",
+      "description": "Replace with the ApiEndpoint printed by bash lab.sh deploy; omit a trailing slash."
+    }
+  ]
+}
