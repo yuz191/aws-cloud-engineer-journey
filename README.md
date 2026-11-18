@@ -16,6 +16,8 @@ The Week 5 custom VPC, bastion SSH path, NAT verification, network diagram, and 
 
 The Week 7 API Gateway, Lambda, DynamoDB, and SQS lab is in [week-07](week-07/README.md).
 
+The Week 8 Terraform VPC configuration and command guide are in [week-08](week-08/README.md).
+
 ## PropertyLite
 
 Open Ubuntu with `wsl -d Ubuntu`, then run:
